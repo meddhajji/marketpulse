@@ -10,8 +10,14 @@ import sqlite3
 def scrape_avito():
     print("Starting MarketPulse Scraper...")
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless") # You can uncomment this now if you want
+    options.add_argument("--headless") # CRITICAL: No screen on cloud
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # ... inside scrape_avito() ...
+    print("Starting MarketPulse Scraper...")
+    # ... rest of code remains the same ...
     
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     
