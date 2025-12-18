@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 **MarketPulse** is a comprehensive laptop market analysis tool that scrapes, cleans, and visualizes laptop listings from Avito.ma. It provides actionable insights into pricing trends, brand distribution, and value-for-money recommendations.
+Here's the link to view the result: https://marketpulse-hsrapj6vblbkxg2u269p4p.streamlit.app/
 
 ## Features
 
