@@ -1,3 +1,30 @@
-venv/
+# .gitignore
+
+# Python
 __pycache__/
-.env
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+marketpulse_raw.db
+*.log
+chromedriver.exe
+.streamlit/secrets.toml
+
+# Don't ignore the clean database
+!marketpulse.db
